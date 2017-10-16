@@ -1,0 +1,20 @@
+.buttons-container, .list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container {
+  flex-direction: row;
+}
+
+.list-container {
+  flex-direction: column;
+}
+
+.box {
+  width: 100px;
+  height: 50px;
+  background-color: #9c27b0;
+  margin: 5px;
+}

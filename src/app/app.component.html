@@ -1,0 +1,12 @@
+<div class="buttons-container">
+  <button mat-fab (click)="add()">
+    <i class="material-icons">add</i>
+  </button>
+  <button mat-fab [disabled]="list.length===0" (click)="remove(0)">
+    <i class="material-icons">delete</i>
+  </button>
+</div>
+<div @list class="list-container">
+  <div @items class="box" *ngFor="let item of list; let i=index" (click)="remove(i)"></div>
+</div>
+
